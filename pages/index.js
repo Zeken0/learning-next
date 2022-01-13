@@ -5,10 +5,10 @@ import CustomButton from "../components/button/button";
 import { useState } from "react";
 
 export default function Home() {
-  const [direction, setUpdatedDirection] = useState("down");
+  const [direction, setDirection] = useState("down");
 
-  const handleOnClick = (directionWanted) => {
-    setUpdatedDirection(directionWanted);
+  const handleOnClick = (updatedDirection) => {
+    setDirection(updatedDirection);
   };
   return (
     <div className={styles.container}>
@@ -17,7 +17,7 @@ export default function Home() {
       <List />
       <CustomButton
         onClick={() => {
-          handleOnClick("up");
+          handleOnClick("then up");
         }}
       >
         Click me
