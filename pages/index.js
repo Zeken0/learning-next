@@ -3,7 +3,8 @@ import List from "../components/list/list";
 import Title from "../components/title/title";
 import CustomButton from "../components/button/button";
 import Counter from "../components/counter/counter";
-import { useState } from "react";
+import People from "../components/people/people";
+import React, { useState } from "react";
 
 export default function Home() {
   const [direction, setDirection] = useState("down");
@@ -23,6 +24,7 @@ export default function Home() {
       >
         Click me
       </CustomButton>
+      <People />;
       <Counter />
     </div>
   );
