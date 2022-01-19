@@ -1,9 +1,7 @@
 import { useState, useEffect } from "react";
 import Axios from "axios";
 
-// This component displays a list of people from an API endpoint
 const People = () => {
-  // This variable holds the list of people
   const [people, setPeople] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState();
