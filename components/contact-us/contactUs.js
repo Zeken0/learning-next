@@ -11,6 +11,7 @@ export default function ContactUs() {
     handleBlur,
     resetForm,
     isSubmitting,
+    setSubmitting,
   } = useFormik({
     initialValues: {
       firstName: "",
@@ -34,7 +35,10 @@ export default function ContactUs() {
     }),
 
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      setTimeout(() => {
+        alert(JSON.stringify(values, null, 2));
+        setSubmitting(false);
+      }, 800);
     },
   });
   console.log("errors:", errors);

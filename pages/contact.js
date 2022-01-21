@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ContactUs from "../components/contact-us/contactUs";
 
 export default function Contact() {
